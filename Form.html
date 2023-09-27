@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Form</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #ccc;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      border: 1px solid #000;
+      cursor: pointer;
+    }
+
+    .required {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <th>First Name <span class="required">*</span></th>
+      <td><input type="text" id="first_name" name="first_name" required></td>
+    </tr>
+    <tr>
+      <th>Last Name <span class="required">*</span></th>
+      <td><input type="text" id="last_name" name="last_name" required></td>
+    </tr>
+    <tr>
+      <th>Email <span class="required">*</span></th>
+      <td><input type="email" id="email" name="email" required></td>
+    </tr>
+    <tr>
+      <th>Phone Number <span class="required">*</span></th>
+      <td><input type="tel" id="phone" name="phone" required></td>
+    </tr>
+    <tr>
+      <th>City <span class="required">*</span></th>
+      <td><input type="text" id="city" name="city" required></td>
+    </tr>
+    <tr>
+      <th>Description</th>
+      <td><textarea id="description" name="description" rows="5"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="submit" value="Submit"></td>
+    </tr>
+  </table>
+
+</body>
+</html>
